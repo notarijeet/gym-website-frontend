@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Revive Fitness Gym</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  
+</head>
+<body>
+
+<!-- ✅ POPUP -->
+<div class="popup" id="trial-popup">
+  <p>Book 2 Days Free Trial <span class="clickable">Click here</span></p>
+  <span class="close-btn" id="close-popup">&times;</span>
+</div>
+
+<!-- ✅ NAVBAR -->
+<header class="navbar">
+  <div class="logo">Revive Fitness</div>
+  <nav>
+    <ul class="nav-links" id="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#footer">Contact</a></li>
+      <li><button id="btn-book" class="book-btn">Book Your Visit</button></li>
+    </ul>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </nav>
+</header>
+
+<!-- ✅ HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-slider">
+    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1740');"></div>
+    <div class="slide" style="background-image: url('https://plus.unsplash.com/premium_photo-1675108522672-5d2fa1acdacc?q=80&w=1740');"></div>
+    <div class="slide" style="background-image: url('https://plus.unsplash.com/premium_photo-1664109999494-ddfb14faaaeb?q=80&w=1742');"></div>
+  </div>
+  <div class="hero-content">
+    <h1>Join the Best Gym in Town</h1>
+    <p>Unleash the beast in you</p>
+    <button id="hero-book-btn">Book Your Visit</button>
+  </div>
+</section>
+
+<!-- ✅ GALLERY -->
+<section class="gallery" id="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1581009137042-c552e485697a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <img src="https://images.unsplash.com/photo-1611672585731-fa10603fb9e0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+    <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+  </div>
+</section>
+
+<!-- ✅ TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonial-boxes">
+    <div class="testimonial">
+      <p>"Lost 8kg and feel amazing!"</p><h4>- Riya</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Best trainers and vibe."</p><h4>- Aman</h4>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ PRICING -->
+<section class="pricing" id="pricing">
+  <h2>Pricing Plans</h2>
+  <div class="pricing-cards">
+    <div class="plan">
+      <h3>Basic</h3>
+      <p>₹999/month</p>
+      <ul>
+        <li>Gym Access</li>
+        <li>Trainer Support</li>
+      </ul>
+    </div>
+    <div class="plan">
+      <h3>Premium</h3>
+      <p>₹1499/month</p>
+      <ul>
+        <li>+ Zumba & Kickboxing</li>
+        <li>Nutrition Plan</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ FOOTER -->
+<footer class="footer" id="footer">
+  <div class="footer-cols">
+    <div>
+      <h3>Revive Fitness Gym</h3>
+      <p>Your transformation starts here.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p><i class="fa fa-phone"></i> +91 7987595201</p>
+      <p><i class="fa fa-envelope"></i> station road pendra road in front of mission high school, Gaurela, Madhya Pradesh, India 495117</p>
+      <p><i class="fa fa-map-marker"></i> P, MP</p>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <a href="https://www.instagram.com/gfitnfine/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  <p class="footer-credit">© 2025 Created by Arijeet • cold. short. sweet.</p>
+</footer>
+
+<!-- ✅ WHATSAPP CHAT -->
+<a href="https://wa.me/917803851101" class="whatsapp-chat" target="_blank" aria-label="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- ✅ BOOKING FORM MODAL -->
+<div class="modal" id="book-form-modal">
+  <div class="modal-content" id="book-form-container">
+    <span class="close-modal">&times;</span>
+    <h3>Book Your Visit</h3>
+    <form id="book-form">
+      <input type="text" name="name" placeholder="Your Name" required/>
+      <input type="tel" name="phone" placeholder="Phone Number" required/>
+      <input type="email" name="email" placeholder="Email" required/>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
